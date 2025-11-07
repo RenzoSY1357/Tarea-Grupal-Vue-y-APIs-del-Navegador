@@ -1,7 +1,9 @@
 <script setup lang="ts">
   import { ref } from 'vue';
   import Objetos from './components/CartaObjetos.vue';
-  import ObjetoPrueba from './components/Objetos/ObjetoPrueba.vue';
+  import ObjetoNavigator from './components/Objetos/ObjetoNavigator.vue';
+  import ObjetoHistory from './components/Objetos/ObjetoHistory.vue';
+  import ObjetoDocument from './components/Objetos/ObjetoDocument.vue';
 
   const titulo = ref('Proyecto Vue, composition API y Ts')
   const nombres = ref('Renzo y Fabricio')
@@ -19,19 +21,16 @@
     <main class="ejercicios">
       <section class="Componentes">
 
-        <!-- Carta de ejercicio -->
-        <!-- Ingresa tu ejercicio dentro de esta carta (si es que es necesario) -->
-        <!-- Para separar los ejercicios por secciones, le añades el numero del ejercicio y el titulo -->
-        <Objetos :number="1" title="Objeto Prueba">
-
-          <ObjetoPrueba />
-
+        <Objetos :number="3" title="Objeto navigator">
+          <ObjetoNavigator />
         </Objetos>
 
-        <Objetos :number="2" title="Objeto ...">
+        <Objetos :number="4" title="Objeto history">
+          <ObjetoHistory />
+        </Objetos>
 
-
-
+        <Objetos :number="5" title="Objeto document">
+          <ObjetoDocument />
         </Objetos>
 
       </section>
