@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.app.json",
+  "exclude": [],
+  "include": [
+    "src/**/*",
+    "src/**/tests/*",
+    "src/**/__tests__/*"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "lib": ["ESNext", "DOM"],
+    "types": ["vitest/globals", "node"]
+  }
+}
